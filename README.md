@@ -27,7 +27,7 @@ modbus_tcp에서는 slave id (unitID)를 설정할 필요가 없습니다.
 
 
 
-설치 및 실행 방법 \n
+설치 및 실행 방법
 
 
 sudo apt-get install -y libmodbus-dev
