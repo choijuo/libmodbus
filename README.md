@@ -21,7 +21,9 @@ address를 0부터 5개까지를 읽도록 했습니다.
 
 slave에 요청하고 register[0]~[5] 까지만 출력하도록 설정해놨습니다.
 
-*modbus_tcp에서는 slave id (unitID)를 설정할 필요가 없습니다.
+
+#################################################################
+*modbus_tcp에서는 slave id (unitID)를 설정할 필요가 없습니다.*
 
 
 sudo apt-get install -y libmodbus-dev
@@ -31,4 +33,5 @@ sudo apt-get install -y libmodbus-dev
  g++ -std=c++11 -I /usr/include/modbus TestSlave.c -o TestSlave -lmodbus -lpthread
  g++ -std=c++11 -I /usr/include/modbus TestMaster.c -o TestMaster -lmodbus -lpthread
  
- ./TestSlave 실행 후 ./TestMaster
+ ./TestSlave 를 통해 slave소스 실행
+ ./TestMaster 를 통해 요청값 확인
